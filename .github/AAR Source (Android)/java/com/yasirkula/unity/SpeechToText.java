@@ -22,8 +22,8 @@ import java.util.ArrayList;
 public class SpeechToText
 {
 	public static boolean PermissionFreeMode = false;
-	public static long MinimumSessionLength = -1; // Observed default value: 5000 milliseconds
-	public static long SpeechSilenceTimeout = -1; // Observed default value: 2000 milliseconds
+	public static long MinimumSessionLength = 100000; // Observed default value: 5000 milliseconds
+	public static long SpeechSilenceTimeout = 100000; // Observed default value: 2000 milliseconds
 
 	private static ArrayList<String> supportedLanguages;
 	private static SpeechRecognizer speechRecognizer;
